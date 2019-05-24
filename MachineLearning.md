@@ -35,6 +35,8 @@ PyTorch
 Keras
 Spark MLlib是Spark常见机器学习的库
 
+
+
 # Python数据分析工具简介
 
 ## NumPy
@@ -52,11 +54,15 @@ Spark MLlib是Spark常见机器学习的库
 
 > 特征值分解， SVD分解, 正定矩阵， 特征值
 
-## matplotlib 
+
+
+## matplotlib
 
 - 可视化基础工具
 
 > 学习参考官网demo
+
+
 
 ## Pandas数据分析
 
@@ -84,6 +90,8 @@ Spark MLlib是Spark常见机器学习的库
 
 Scipy-Lecture
 [vim plugin](https://realpython.com/vim-and-python-a-match-made-in-heaven/#auto-complete)
+
+
 
 ## 支持向量机 SVM
 
