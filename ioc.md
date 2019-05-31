@@ -268,7 +268,7 @@ public class FileSystemResourceLoader extends DefaultResourceLoader {}
 
 对于Ioc容器来说， 整个载入过程相当于把定义的`BeanDefinition`在IoC容器中转化成一个Spring内容表示的数据结构的过程。IoC容器对Bean的管理和依赖注入功能是通过对其持有的BeanDefinition进行各种相关操作来完成。这些`BeanDefinition`数据在IoC容器中通过`HashMap`来保持和维护。
 
-![image-20190530134454614](/Users/likaihua/Library/Application Support/typora-user-images/image-20190530134454614.png)
+![image-20190530134454614](http://ww3.sinaimg.cn/large/006tNc79ly1g3kc7ra53hj30pz0d7t9y.jpg)
 
 上面的`loadBeanDefinition`在`AbstractXmlApplicationContext`中实现。创建`XMLBeanDefinitionReader`，调用`loadBeanDefinition(configLocation)`启动信息载入过程。
 
@@ -290,7 +290,7 @@ public class DefaultListableBeanFactory {
 
 解析得到的beanDefinitionMap在`registerBeanDefinition`过程中发生。
 
-![image-20190530140007825](/Users/likaihua/Library/Application Support/typora-user-images/image-20190530140007825.png)
+![image-20190530140007825](http://ww4.sinaimg.cn/large/006tNc79ly1g3kc7pzjivj30i80dzgmj.jpg)
 
 #### BeanDefinitionRegistry
 
@@ -756,7 +756,7 @@ protected void setPropertyValue(PropertyTokenHolder tokens, PropertyValue pv) {
 
 对于BeanFactory, 特别是ApplicationContext, 容器自身也有一个初始化和销毁关闭的过程. `AbstractApplicationContext.prepareBeanFactory`方法为容器配置了`ClassLoader`、`PropertyEditor`和`BeanPostProcessor`等, 从而为容器的启动做好必要的准备工作.
 
-![image-20190530172445688](/Users/likaihua/Library/Application Support/typora-user-images/image-20190530172445688.png)
+![image-20190530172445688](http://ww2.sinaimg.cn/large/006tNc79ly1g3kc7qqxcdj30ic0czt9g.jpg)
 
 ```java
 protected void prepareBeanFactory(ConfigurableListableBeanFactory beanFactory) {
